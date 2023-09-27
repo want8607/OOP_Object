@@ -1,8 +1,8 @@
 package org.example.chap2;
 
-public class NoneDiscountPolicy extends DiscountPolicy{
-    @Override
-    protected Money getDiscountAmount(Screening screening) {
-        return Money.ZERO;
-    }
+public class NoneDiscountPolicy implements DiscountPolicy{
+
+	public Money calculateDiscountAmount(Screening screening) {
+		return Money.ZERO;
+	}
 }
